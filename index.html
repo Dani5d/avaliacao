@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
+<!--providencia informações gerais sobre o documento, como título e links para scripts e folhas de estilos -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,8 +10,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 
+<!-- BODY é o corpo do documento -->
+<!-- CLASS indentifica um grupo de elementos e o ID indentifica um unico elemento -->
 <body>
-
+<!-- MAIN serve para indicar o conteúdo principal -->
     <main>
         <div id="moviePoster">
             <div class="omdbrating">
@@ -22,11 +24,13 @@
         </div>
 
         <div class="description">
-
+<!--O FORM submete os dados de entrada do usuário a um programa que se encarregará do processamento desses dados-->
             <form id="formSearch" action="">
                 <input id="title" type="text" placeholder="Informe o título do filme">
                 <input type="submit" value="Pesquisar">
             </form>
+<!-- DIV e SPAN utilizado para agrupar elementos para fins de estilos  -->
+
             <div id="descriptionBodyNotFound">
             </div>
             <div id="descriptionBody">
@@ -41,7 +45,7 @@
             
         </div>
     </main>
-
+<!-- SCRIPT é usado para incluir ou referenciar um script executáve-->
     <script src="avaliacao.js"></script>
 </body>
 
