@@ -1,8 +1,8 @@
 function getMovieInfosOMDB(title){
-    const url = `http://www.omdbapi.com/?t=${title}&apikey=790af7bc`  
-       
-    fetch(url)
-    .then(response => response.json())
+    const url = `https://www.omdbapi.com/?t=${title}&apikey=790af7bc`
+    let descriptionBody = document.querySelector("#descriptionBody")
+    fetch(url) /*fornece uma maneira fácil e lógica para buscar recursos de forma assíncrona através da rede*/
+    .then(response => response.json()) /*O json()método da Responseinterface recebe um Responsefluxo e o lê até a conclusão. Ele retorna uma promessa que resolve com o resultado da análise do corpo do texto como JSON.*/
     .then(data => {
 
         if(data.Response == 'False'){
