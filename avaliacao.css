@@ -1,21 +1,21 @@
 /* importando a fonte Roboto do google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;900&display=swap');
 
-
+/* (*) pode ser usado para selecionar todo e qualquer tipo de elemento em uma página HTML*/
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+     margin: 0; /*define a área de margem nos quatro lados do elemento*/
+    padding: 0; /*define uma a distância entre o conteúdo de um elemento e suas bordas*/
+    box-sizing: border-box; /*é utilizada para alterar a propriedade padrão da box model, usada para calcular larguras e alturas dos elementos*/
+  }
 
 main {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    color: #CAB9B9;
-    position: fixed;
-    font-family: 'Roboto', sans-serif;
-    font-size: 28px;
+    width: 100%; /*determina a largura da área de conteúdo de um elemento*/
+    height: 100vh; /*destinam a definir a altura dos boxes*/
+    display: flex; /*é utilizada para indicar a forma como os elementos HTML serão dispostos na página ou em espaços delimitados */
+    color: #CAB9B9; /*definine o valor da cor de um elemento*/
+    position: fixed; /*é uma propriedade utilizada para determinar o posicionamento dos elementos na página.*/
+    font-family: 'Roboto', sans-serif; /*Determina a fonte da letra*/
+    font-size: 28px; /*Determina o tamanho da letra*/
 }
 
 #moviePoster {
@@ -130,16 +130,13 @@ main {
 }
 
 
-
-
-
 /* responsivo para celular */
 
-@media (max-width: 700px) {
+@media (max-width: 700px) { /* determinar um estilo CSS para cada tipo de mídia que te interessar. */
 
     main {
         position: static;
-        display: block;
+        display: block; /*faz com que o elemento HTML seja renderizado como bloco*/
         font-size: 18px;
         /* height: 100%; */
     }
@@ -156,14 +153,16 @@ main {
     .description {
         width: 100%;
         position: relative;
-        z-index: 3;
+        z-index: 3; /*especifica a ordem da pilha de um elemento do anúncio.*/
         padding: 8%;
     }
 
-    #formSearch input[type='text'], #formSearch input[type='submit'] {
+    #formSearch input[type='text'], #formSearch input[type='submit'] { /* usado para criar controles interativos para formulários baseados na web para receber dados do usuário*/
         font-size: 18px;
         width: 100%;
     }
 
   
 }
+
+
